@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n-attr="title:case.codeblue.page_title">Code Blue — Ángel Dorado</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/case-study.css">
+</head>
+<body class="case-study-page">
+
+<nav id="main-nav">
+  <a href="../index.html" class="nav-brand">
+    <span class="nav-name">Ángel Dorado</span>
+    <span class="nav-role" data-i18n="nav.role">Product Designer & Design System Lead</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="../index.html#about" data-i18n="nav.about">Sobre mi</a></li>
+    <li><a href="../index.html#proyectos" data-i18n="nav.portfolio">Portfolio</a></li>
+    <li><a href="../index.html#contacto" data-i18n="nav.contact">Contacto</a></li>
+    <li>
+      <div class="nav-lang" role="group" aria-label="Idioma">
+        <button class="lang-btn active" type="button" data-lang="es" aria-pressed="true">ES</button>
+        <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/angeldoradobuzon/" target="_blank" rel="noopener noreferrer" class="btn-linkedin">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        <span data-i18n="nav.linkedin">Linkedin</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<header class="case-hero">
+  <div class="case-hero-inner">
+    <a href="../index.html#proyectos" class="back-link" data-i18n="case.back">← Volver a proyectos</a>
+    <p class="case-label" data-i18n="case.label">Caso de estudio</p>
+    <h1 class="case-title" data-i18n="case.codeblue.title">Code Blue. La evolución de UI kit a Design System</h1>
+    <p class="case-summary" data-i18n="case.codeblue.summary">Lo que empezó como un UI kit simple ha evolucionado hasta un Design System que da soporte a más de 12 productos digitales. Además del diseño de componentes, cuenta con una arquitectura de tokens en tres niveles, una gobernanza que funciona sin equipo dedicado, y un lenguaje común que ha cambiado cómo diseño y desarrollo trabajan juntos en Serviceware.</p>
+    <div class="case-meta">
+      <div class="case-meta-primary">
+      <div class="case-meta-tag">
+        <p class="case-meta-label" data-i18n="case.meta.role">Rol</p>
+        <p class="case-meta-value" data-i18n="case.codeblue.meta_role">Product Designer &amp; Design System Lead</p>
+      </div>
+      <div class="case-meta-tag case-meta-tag--team">
+        <p class="case-meta-label" data-i18n="case.meta.team">Equipo</p>
+        <p class="case-meta-value" data-i18n="case.codeblue.meta_team">UX Designers, UX Engineers, Developers, Stakeholders</p>
+      </div>
+      <div class="case-meta-tag">
+        <p class="case-meta-label" data-i18n="case.meta.year">Año</p>
+        <p class="case-meta-value" data-i18n="case.codeblue.meta_year">2019 – Actualidad</p>
+      </div>
+      <div class="case-meta-tag case-meta-tag--company">
+        <p class="case-meta-label" data-i18n="case.meta.company">Empresa</p>
+        <p class="case-meta-value" data-i18n="case.codeblue.meta_company">Serviceware SE</p>
+      </div>
+      </div>
+      <div class="case-meta-tag case-meta-tag--impact">
+        <p class="case-meta-label" data-i18n="case.meta.impact">Impacto destacado</p>
+        <p class="case-meta-value" data-i18n="case.codeblue.meta_impact">−25% tiempo de implementación de componentes</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="case-hero-visual">
+  <div class="case-hero-visual-inner">
+    <img src="../assets/images/projects/Code-Blue-Hero.png" alt="Vista general del Design System Code Blue" width="1280" loading="eager">
+  </div>
+</div>
+
+<article class="case-body case-content">
+
+  <section class="case-section">
+    <div class="case-section-header">
+      <h2 class="case-section-title" data-i18n="case.section.context">Contexto</h2>
+      <span class="case-section-accent" aria-hidden="true"></span>
+    </div>
+    <div class="case-block">
+      <h3 data-i18n="case.subsection.challenge">El reto</h3>
+      <p data-i18n-html="case.codeblue.p_001">Cuando me incorporé a Serviceware en 2019, la compañía gestionaba 5 productos digitales en producción y otros 3 en construcción, desarrollados por equipos independientes, cada uno con su propia tecnología, criterios visuales y nivel de madurez. No existía ningún sistema de diseño, por lo que las inconsistencias visuales y de interacción se acumulaban entre productos —y a menudo dentro de un mismo producto—, lo que generaba fricción para los usuarios y duplicaba el trabajo en diseño y desarrollo.</p>
+      <p data-i18n-html="case.codeblue.p_002">Por ello empecé por construir un UI kit simple, llamado Code Blue, que sirviera para resolver las inconsistencias más visibles. Con el tiempo, se añadieron más componentes y se inició una documentación básica (versión 2.0), pero aún había inconsistencias entre los equipos dado que cada uno utilizaba una tecnología diferente. Esto me llevó a proponer y liderar una actualización profunda hasta llegar a la versión actual (3.0): un Design System completo y escalable, con arquitectura de tokens en tres niveles, documentación de componentes y patrones, con una alineación real con desarrollo, y con gobernanza distribuida entre equipos pero conmigo como eje de decisión y coherencia.</p>
+    </div>
+    <div class="case-block">
+      <h3 data-i18n="case.subsection.role">Mi rol</h3>
+      <p data-i18n-html="case.codeblue.p_003">He sido el owner del Design System desde el origen, tomando las principales decisiones de arquitectura y diseño de componentes, y liderando la documentación del sistema en colaboración con otros diseñadores. Trato Code Blue como un producto interno que evoluciona con sus usuarios (equipos de diseño y desarrollo) más que como una librería estática.</p>
+    </div>
+  </section>
+
+  <hr class="case-divider">
+
+  <section class="case-section">
+    <div class="case-section-header">
+      <h2 class="case-section-title" data-i18n="case.section.process">Proceso</h2>
+      <span class="case-section-accent" aria-hidden="true"></span>
+    </div>
+    <div class="case-block">
+      <h3 data-i18n="case.codeblue.h3.entender_antes_que_dise_ar">Entender antes que diseñar</h3>
+      <p data-i18n-html="case.codeblue.p_004">Antes de proponer cambios estructurales en Code Blue 3.0, dediqué tiempo a entender qué estaba pasando realmente en los productos. Hice una auditoría transversal de los principales componentes utilizados y analicé cómo se diseñaban, evolucionaban e implementaban en cada equipo. Esto incluyó conversaciones con Product Designers, Product Owners, Product Leads y desarrolladores de los distintos productos para entender qué les ayudaba y qué les frenaba en su día a día con el sistema.</p>
+      <p data-i18n-html="case.codeblue.p_005">Los hallazgos cambiaron mi planteamiento inicial:</p>
+      <ul>
+        <li data-i18n-html="case.codeblue.li_001">Varios componentes estaban duplicados o implementados de forma inconsistente entre productos.</li>
+        <li data-i18n-html="case.codeblue.li_002">Los tokens existentes estaban a nivel primitivo, sin una capa semántica que permitiera abstraer su significado dentro de la interfaz.</li>
+        <li data-i18n-html="case.codeblue.li_003">Había componentes creados para casos de uso muy específicos que no podían escalar a otros contextos.</li>
+      </ul>
+      <p data-i18n-html="case.codeblue.p_006">La auditoría me dejó claro que el problema no era visual, era estructural. No bastaba con rediseñar componentes, sino que había que rediseñar la base sobre la que se construían. Esa conclusión definió todo lo que vino después.</p>
+    </div>
+    <div class="case-block">
+      <h3 data-i18n="case.codeblue.h3.nueva_arquitectura_de_tokens_en_tres_niveles">Nueva arquitectura de tokens en tres niveles</h3>
+      <p data-i18n-html="case.codeblue.p_007">Una de las decisiones técnicas más importantes fue redefinir la arquitectura de tokens del sistema. El reto fue pasar de una capa única de tokens primitivos a un modelo con tres niveles que permitiera escalar el sistema sin romper su coherencia.</p>
+      <figure class="case-figure case-figure-contained">
+        <img src="../assets/images/projects/Code-Blue-Tokens.png" alt="Diagrama de tokens en 3 niveles" loading="lazy">
+        <figcaption data-i18n="case.codeblue.cap.diagrama_de_tokens_en_3_niveles_pri">Diagrama de tokens en 3 niveles — Primitivos → Semánticos → Componente</figcaption>
+      </figure>
+      <ul>
+        <li data-i18n-html="case.codeblue.li_004"><strong>Tokens primitivos:</strong> los valores base del sistema (paleta de colores, escalas tipográficas, espaciados).</li>
+        <li data-i18n-html="case.codeblue.li_005"><strong>Tokens semánticos:</strong> una capa que describe la intención del token dentro de la interfaz (background, text, border, icon), desacoplando los valores visuales de su uso.</li>
+        <li data-i18n-html="case.codeblue.li_006"><strong>Tokens de componente:</strong> la capa que conecta la arquitectura de tokens con implementaciones concretas, permitiendo adaptar cada componente sin afectar al sistema global.</li>
+      </ul>
+      <p data-i18n-html="case.codeblue.p_008">Esta estructura permitió introducir cambios visuales (temas, rebranding, ajustes de densidad...) sin tener que retocar manualmente múltiples componentes, lo que antes era muy difícil de gestionar. Además permitió alinear los equipos utilizando una única arquitectura de tokens para las distintas tecnologías que se utilizaban. En este punto pude convencer a la mayoría de los equipos de las ventajas de alinearnos en la implementación, y todos excepto dos decidieron migrar sus desarrollos a una tecnología común (PrimeNG).</p>
+    </div>
+    <div class="case-block">
+      <h3 data-i18n="case.codeblue.h3.los_componentes_del_sistema">Los componentes del sistema</h3>
+      <p data-i18n-html="case.codeblue.p_009">Cada componente combina patrones estándar con piezas custom diseñadas para casos concretos del producto, como el componente de entrada de texto Multi-language. Todos incluyen variantes, estados y especificaciones de uso, y funcionan como acuerdo entre diseño y desarrollo. Los componentes se diseñan siguiendo los estándares de accesibilidad WCAG 2.1 nivel AA. Además, la inteligencia artificial juega un papel cada vez más relevante en mi trabajo con el sistema, ya que la utilizo como apoyo para generar ideas, prototipos rápidos que testear, acelerar la generación de documentación de componentes y para realizar validaciones de accesibilidad.</p>
+    </div>
+    <div class="case-block">
+      <h3 data-i18n="case.codeblue.h3.gobernanza_distribuida_pero_con_un_eje_claro">Gobernanza distribuida, pero con un eje claro</h3>
+      <p data-i18n-html="case.codeblue.p_010">Cuando llegó el momento de definir cómo se mantendría el sistema vivo, la compañía decidió no crear un equipo dedicado al Design System. La responsabilidad se distribuiría entre los equipos de producto, con un modelo colaborativo.</p>
+      <p data-i18n-html="case.codeblue.p_011">Mi decisión fue asumir el rol de eje y referencia: el sistema necesitaba alguien que tomara las decisiones finales sobre arquitectura, componentes y patrones, aunque las contribuciones vinieran de equipos diversos.</p>
+      <p data-i18n-html="case.codeblue.p_012">En la práctica esto significó:</p>
+      <ul>
+        <li data-i18n-html="case.codeblue.li_007">Definir un <strong>proceso de contribución claro:</strong> cualquier necesidad de un equipo pasa por una auditoría sistémica antes de convertirse en un nuevo componente o variante.</li>
+        <li data-i18n-html="case.codeblue.li_008">Asumir el rol de <strong>QA de diseño</strong> del sistema, revisando que cada cambio mantenga la coherencia visual y funcional.</li>
+        <li data-i18n-html="case.codeblue.li_009">Centralizar la <strong>documentación y los principios</strong> en un ecosistema combinado de Figma, Storybook y ZeroHeight, accesible para todos los equipos.</li>
+        <li data-i18n-html="case.codeblue.li_010">Establecer <strong>periodos de adaptación</strong> para cambios que afecten a múltiples productos, evitando bloquear el desarrollo.</li>
+      </ul>
+      <p data-i18n-html="case.codeblue.p_013">Para mantener el sistema cerca de las necesidades reales, llevé a cabo sesiones de feedback con los equipos sobre cuestiones críticas como la nomenclatura de componentes y tokens, o qué información era realmente relevante en la documentación para facilitar el handoff entre diseño y desarrollo.</p>
+      <p data-i18n-html="case.codeblue.p_014">Este modelo me ha permitido mantener el equilibrio entre dos necesidades que parecen opuestas: la consistencia del sistema y la autonomía de los equipos.</p>
+    </div>
+  </section>
+
+  <hr class="case-divider">
+
+  <section class="case-section">
+    <div class="case-section-header">
+      <h2 class="case-section-title" data-i18n="case.section.impact">Impacto</h2>
+      <span class="case-section-accent" aria-hidden="true"></span>
+    </div>
+    <p data-i18n-html="case.codeblue.p_015">Code Blue 3.0 da soporte a más de 12 productos digitales, con una adopción del 80% entre los equipos de producto y una reducción del 25% en el tiempo de implementación de nuevos componentes. Lo más importante es que se ha establecido un lenguaje común entre diseño y desarrollo, reduciendo la fricción en el handoff y permitiendo que los equipos avancen de forma más eficiente y consistente.</p>
+  </section>
+
+  <hr class="case-divider">
+
+  <section class="case-section">
+    <div class="case-section-header">
+      <h2 class="case-section-title" data-i18n="case.section.learnings">Aprendizajes</h2>
+      <span class="case-section-accent" aria-hidden="true"></span>
+    </div>
+    <p data-i18n-html="case.codeblue.p_016">Code Blue es un proyecto que sigue vivo, y eso me obliga a pensarlo no como algo terminado sino como algo en evolución constante. Hay cuatro aprendizajes que me llevo de estos seis años:</p>
+    <div class="case-callout">
+      <p data-i18n-html="case.codeblue.p_017"><strong>El sistema crece al ritmo del producto, no al revés.</strong> Si hubiese intentado construir Code Blue 3.0 desde el principio habría fracasado. Empezar con un UI kit simple fue la decisión correcta que nos permitió ganar tracción y construir credibilidad antes de pedir la inversión necesaria para un sistema completo.</p>
+    </div>
+    <div class="case-callout">
+      <p data-i18n-html="case.codeblue.p_018"><strong>Un Design System se mide en contexto, no en aislado.</strong> El verdadero reto no es lo bonito que se ve en una librería de componentes, sino cómo se comporta cuando lo aplican equipos distintos con propósitos distintos.</p>
+    </div>
+    <div class="case-callout">
+      <p data-i18n-html="case.codeblue.p_019"><strong>La arquitectura técnica define el techo del sistema.</strong> Durante años el sistema funcionó con tokens primitivos y suficiente disciplina, hasta que la falta de capa semántica empezó a frenar la evolución del producto. La capa semántica no es un detalle de implementación: es lo que separa una librería de un sistema vivo.</p>
+    </div>
+    <div class="case-callout">
+      <p data-i18n-html="case.codeblue.p_020"><strong>La gobernanza distribuida funciona, pero necesita un eje.</strong> Un modelo sin equipo dedicado puede sostenerse si hay alguien que mantiene la coherencia. He aprendido a equilibrar autonomía y visión única que evite la fragmentación.</p>
+    </div>
+  </section>
+
+</article>
+
+<footer>
+  <div class="footer-left">
+    <p class="footer-name">Ángel Dorado</p>
+    <p class="footer-role" data-i18n="footer.role">Product Designer & Design System Lead</p>
+  </div>
+  <div class="footer-links">
+    <a href="mailto:angeldb87@gmail.com">angeldb87@gmail.com</a>
+    <a href="tel:+34677164307">(+34) 677 16 43 07</a>
+    <a href="https://www.linkedin.com/in/angeldoradobuzon/" target="_blank" rel="noopener noreferrer" data-i18n="contact.linkedin">Linkedin</a>
+  </div>
+</footer>
+
+<script src="../js/locales-data.js"></script>
+<script src="../js/case-locales-data.js"></script>
+<script src="../js/i18n.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
