@@ -1,13 +1,12 @@
 /* ── CASE STUDY PAGES (Figma) ── */
 .case-study-page {
-  padding-top: 100px;
   background: var(--color-light);
 }
 
 /* Hero azul (mismo gradiente que home) */
 .case-hero {
   background: radial-gradient(ellipse 960px 340px at 50% 50%, rgba(93, 109, 173, 1) 0%, rgba(68, 84, 148, 1) 50%, rgba(42, 58, 122, 1) 100%);
-  padding: 100px 40px 80px;
+  padding: 140px 40px 80px;
 }
 
 .case-hero-inner {
@@ -37,7 +36,7 @@
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--color-text-light-muted);
-  margin-bottom: 10px;
+  margin-bottom: 24px;
 }
 
 .case-title {
@@ -419,7 +418,7 @@
 
 @media (max-width: 900px) {
   .case-hero {
-    padding: 80px 24px 60px;
+    padding: 100px 24px 60px;
   }
 
   .case-hero-visual {

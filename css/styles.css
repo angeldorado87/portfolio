@@ -67,6 +67,55 @@ nav {
 
 nav.scrolled { box-shadow: 0 4px 24px rgba(42, 58, 122, 0.08); }
 
+.nav-controls {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-light);
+  color: var(--color-primary);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.nav-toggle:hover {
+  background: var(--color-bg-surface);
+  border-color: var(--color-primary);
+}
+
+.nav-toggle-icon {
+  display: block;
+}
+
+.nav-toggle-icon--close {
+  display: none;
+}
+
+nav.nav-open .nav-toggle-icon--menu {
+  display: none;
+}
+
+nav.nav-open .nav-toggle-icon--close {
+  display: block !important;
+}
+
 .nav-brand {
   text-decoration: none;
   display: flex;
@@ -110,6 +159,8 @@ nav.scrolled { box-shadow: 0 4px 24px rgba(42, 58, 122, 0.08); }
 
 .nav-lang {
   display: flex;
+  flex-shrink: 0;
+  margin-right: 16px;
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   overflow: hidden;
@@ -125,13 +176,17 @@ nav.scrolled { box-shadow: 0 4px 24px rgba(42, 58, 122, 0.08); }
   background: transparent;
   color: var(--color-text-alt);
   cursor: pointer;
-  transition: all 0.2s;
+  transition: background 0.2s, color 0.2s;
   font-family: var(--font-body);
 }
 
+.lang-btn:hover:not(.active) {
+  color: var(--color-primary);
+}
+
 .lang-btn.active {
-  background: var(--color-primary);
-  color: var(--color-light);
+  background: var(--color-light);
+  color: var(--color-primary);
 }
 
 .btn-linkedin {
@@ -991,21 +1046,98 @@ body.gate-locked > *:not(#project-gate) {
   }
 
   .about-right { width: 100%; }
+
+  .section-title {
+    line-height: 1.2;
+  }
 }
 
 @media (max-width: 900px) {
   nav {
-    height: auto;
+    height: 80px;
     min-height: 80px;
-    padding: 16px 24px;
-    flex-wrap: wrap;
+    padding: 0 24px;
+    flex-wrap: nowrap;
     gap: 16px;
   }
 
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: flex-end;
+  .nav-brand {
+    min-width: 0;
+    flex: 1;
+  }
+
+  .nav-controls {
     gap: 12px;
+    position: relative;
+  }
+
+  .nav-lang {
+    margin-right: 0;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    min-width: min(280px, calc(100vw - 48px));
+    padding: 12px;
+    background: var(--color-light);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    box-shadow: 0 16px 48px rgba(42, 58, 122, 0.14);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+    pointer-events: none;
+  }
+
+  nav.nav-open .nav-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .nav-links > li {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .nav-links > li:last-child {
+    border-bottom: none;
+  }
+
+  .nav-links > li > a:not(.btn-linkedin) {
+    display: block;
+    padding: 12px 8px;
+  }
+
+  .nav-links > li:has(.btn-linkedin) {
+    padding: 12px 8px 4px;
+    border-bottom: none;
+  }
+
+  .btn-linkedin {
+    width: 100%;
+    justify-content: center;
+    height: 44px;
+    padding: 0 16px;
+  }
+
+  body.nav-menu-open {
+    overflow: hidden;
   }
 
   .projects-grid { grid-template-columns: 1fr; }
@@ -1028,8 +1160,6 @@ body.gate-locked > *:not(#project-gate) {
 }
 
 @media (max-width: 600px) {
-  .nav-links > li:not(:last-child):not(:nth-last-child(2)) { display: none; }
-
   .kpi-row { flex-direction: column; gap: 16px; }
 
   .contact-links { flex-direction: column; align-items: stretch; }
