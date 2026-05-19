@@ -187,6 +187,7 @@ nav.nav-open .nav-toggle-icon--close {
 .lang-btn.active {
   background: var(--color-light);
   color: var(--color-primary);
+  font-weight: var(--fw-bold);
 }
 
 .btn-linkedin {
