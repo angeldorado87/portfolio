@@ -44,7 +44,7 @@
   font-family: var(--font-display);
   font-size: clamp(36px, 5vw, var(--fs-h1));
   font-weight: var(--fw-bold);
-  line-height: var(--lh-h1);
+  line-height: 1.15;
   color: var(--color-text-light);
   letter-spacing: 0;
   margin-bottom: 24px;
@@ -411,6 +411,12 @@
   margin-top: 0;
 }
 
+@media (max-width: 1100px) {
+  .case-title {
+    line-height: 1.2;
+  }
+}
+
 @media (max-width: 900px) {
   .case-hero {
     padding: 80px 24px 60px;
@@ -427,6 +433,17 @@
   .case-figure-grid,
   .case-figure-grid-3 {
     grid-template-columns: 1fr;
+  }
+
+  .case-figure-stack .case-figure {
+    max-width: 100%;
+  }
+
+  .case-body .case-figure-stack .case-figure img {
+    min-width: 0;
+    width: auto;
+    max-width: 100%;
+    max-height: 800px;
   }
 
   .case-meta-primary {
