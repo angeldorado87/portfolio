@@ -8,7 +8,7 @@
   "nav.contact": "Contact",
   "nav.linkedin": "LinkedIn",
 
-  "hero.title": "Hi, I'm Ángel Dorado",
+  "hero.title": "Hi, I'm Ángel",
   "hero.role": "Product Designer & Design System Lead",
   "hero.desc": "I combine end-to-end product design with design system leadership to turn complex problems into clear experiences, focused on what matters: <strong>users, business, and product.</strong>",
   "hero.cta.projects": "View projects",
@@ -88,6 +88,15 @@
   "projects.melia.overlay.desc": "Complete redesign of the Meliá Hotels International loyalty program website, backed by extensive user research and validated with NPS above 85%.",
 
   "projects.overlay.cta": "View case",
+
+  "gate.title": "Private project",
+  "gate.message": "This project is private and you need access. Enter the password.",
+  "gate.password_label": "Password",
+  "gate.show_password": "Show password",
+  "gate.hide_password": "Hide password",
+  "gate.error": "Incorrect password. Please try again.",
+  "gate.cancel": "Cancel",
+  "gate.submit": "Access",
 
   "contact.title": "Let's talk?",
   "contact.subtitle": "I'm open to new opportunities and collaborations. If you think I can add value to your team, I'd be happy to chat.",
